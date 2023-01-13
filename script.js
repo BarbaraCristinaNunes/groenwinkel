@@ -1,38 +1,37 @@
-import vegetables from './vegetables.json' assert { type: "json" };
+// import vegetables from './vegetables.json' assert { type: "json" };
 
-console.log("TEST", vegetables)
-
-// const vegetables = [
-//     {
-//         "vegetable": "appel",
-//         "price": 1.90,
-//         "unit": "kg"
-//     },
-//     {
-//         "vegetable": "banana",
-//         "price": 0.90,
-//         "unit": "kg"
-//     },
-//     {
-//         "vegetable": "papaya",
-//         "price": 2,
-//         "unit": "piece"
-//     },
-//     {
-//         "vegetable": "pineapple",
-//         "price": 1,
-//         "unit": "kg"
-//     },
-//     {
-//         "vegetable": "broccoli",
-//         "price": 1.50,
-//         "unit": "kg"
-//     }
-// ];
+const vegetables = [
+    {
+        "vegetable": "appel",
+        "price": 1.90,
+        "unit": "kg"
+    },
+    {
+        "vegetable": "banana",
+        "price": 0.90,
+        "unit": "kg"
+    },
+    {
+        "vegetable": "papaya",
+        "price": 2,
+        "unit": "piece"
+    },
+    {
+        "vegetable": "pineapple",
+        "price": 1,
+        "unit": "kg"
+    },
+    {
+        "vegetable": "broccoli",
+        "price": 1.50,
+        "unit": "kg"
+    }
+];
 
 const list = document.getElementById("vegetables");
 const rows = document.getElementsByTagName("tr");
 const addButton = document.getElementById("add");
+const deleteButton = document.getElementsByClassName("delete");
 addButton.addEventListener("click",selectVegetable);
 
 // With this forEach all vegetables options are created ar the select tag.

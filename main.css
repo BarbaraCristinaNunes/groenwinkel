@@ -45,14 +45,14 @@ button:hover {
 }
 
 input {
-  border: none;
+  border: solid 1px black;
   padding: 15px 32px;
   margin: 15px;
   font-size: medium;
 }
 
 select {
-  border: none;
+  border: solid 1px black;
   padding: 15px 32px;
   margin: 15px;
   font-size: medium;
