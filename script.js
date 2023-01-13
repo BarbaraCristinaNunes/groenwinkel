@@ -1,5 +1,3 @@
-// import vegetables from './vegetables.json' assert { type: "json" };
-
 const vegetables = [
     {
         "vegetable": "appel",
@@ -31,7 +29,6 @@ const vegetables = [
 const list = document.getElementById("vegetables");
 const rows = document.getElementsByTagName("tr");
 const addButton = document.getElementById("add");
-const deleteButton = document.getElementsByClassName("delete");
 addButton.addEventListener("click",selectVegetable);
 
 // With this forEach all vegetables options are created ar the select tag.
@@ -61,6 +58,8 @@ function selectVegetable(){
         }else{
             addVegetaltoTable(optionSelected);
         }
+    }else{
+        alert("You have to enter a number bigger than 0")   
     }
 }
 
@@ -76,7 +75,11 @@ function addVegetaltoTable(data){
     });
 
     const lastCell = row.insertCell(4);
-    lastCell.innerHTML = "<button class='delete' onClick=deleteVegetablefromTable(this)>Delete</button>";
+    const button = document.createElement("button");
+    button.setAttribute("class", "delete");
+    button.setAttribute("onclick", "deleteVegetablefromTable(this)");
+    button.innerHTML = "Delete"
+    lastCell.append(button);
     calculateTotal();
 
 }
@@ -110,7 +113,7 @@ function checkVegetableIsAtTable(data){
 
 }
 
-// This funcitono update vagetable information from the table
+// This function update vagetable information from the table
 function updateVegetableSelectes(index, data){
     rows[index].cells[1].innerHTML = data[1];
     rows[index].cells[3].innerHTML = data[3];
