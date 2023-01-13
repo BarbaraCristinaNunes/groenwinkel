@@ -1,0 +1,27 @@
+[
+    {
+        "vegetable": "appel",
+        "price": 1.90,
+        "unit": "kg"
+    },
+    {
+        "vegetable": "banana",
+        "price": 0.90,
+        "unit": "kg"
+    },
+    {
+        "vegetable": "papaya",
+        "price": 2,
+        "unit": "piece"
+    },
+    {
+        "vegetable": "pineapple",
+        "price": 1,
+        "unit": "kg"
+    },
+    {
+        "vegetable": "broccoli",
+        "price": 1.50,
+        "unit": "kg"
+    }
+]

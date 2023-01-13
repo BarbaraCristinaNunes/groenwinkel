@@ -1,0 +1,64 @@
+body {
+    margin: 10;
+    padding: 0;   
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 10px;
+    background-color: #cfe2f1;
+    padding: 10px;
+}
+  
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+table {
+  border-spacing: 30px;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.delete {
+  background-color: red; /* Green */
+  opacity: 0.8;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+input {
+  border: none;
+  padding: 15px 32px;
+  margin: 15px;
+  font-size: medium;
+}
+
+select {
+  border: none;
+  padding: 15px 32px;
+  margin: 15px;
+  font-size: medium;
+}
+
+.total {
+  color: #136716;
+  text-decoration:underline;
+}
