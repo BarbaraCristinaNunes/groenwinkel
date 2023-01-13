@@ -59,7 +59,7 @@ function selectVegetable(){
             addVegetaltoTable(optionSelected);
         }
     }else{
-        alert("You have to enter a number bigger than 0")   
+        alert("You have to enter a number bigger than 0")       
     }
 }
 

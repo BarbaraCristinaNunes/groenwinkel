@@ -8,6 +8,8 @@ It is a project built using vanilla JavaScript which goal is to alow the user pl
 * Show price from vegetable selected and total price that the user needs to pay;
 * User can write only number in the input;
 
+
+<!-- 
 but express and http-server were installed to read the local json file. You can see this project running without Node or to running with Node. Although when the project is runned with Node the delete functionality does not work, while this problem does not happen in the other way.
 
 
@@ -23,4 +25,4 @@ Steps to run the project with Node:
 6. Change ``` <script src="script.js"></script> ``` to ``` <script type="module" src="script.js"></script> ```
 3. Go to http://127.0.0.1:8080
 
-
+ -->
